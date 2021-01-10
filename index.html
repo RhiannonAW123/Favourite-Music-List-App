@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Favourite Music App</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+    <form id="new-item-form">
+     <div id="form-wrapper">
+      <div class="form-item">
+        <label for="artist" class="primary">Artist</label>
+        <input type="text" id="artist" required/>
+      </div>
+
+      <div class="form-item">
+        <label for="song" class="primary">Song</label>
+        <input type="text" id="song" required/>
+      </div>
+
+      <div class="form-item">
+        <p>Genre</p>
+        <label for="rock">Rock</label>
+        <input type="radio" id="genre" name="answer" value="rock">
+        
+        <br> 
+        <label for="grime">Grime</label>
+        <input type="radio" id="genre" name="answer" value="grime">
+        <br> 
+        <label for="hip-hop">Hip Hop</label>
+        <input type="radio" id="genre" name="answer" value="hip-hop">
+        <br> 
+        <label for="classics">Classics</label>
+        <input type="radio" id="genre" name="answer" value="classics">
+        <br> 
+        <label for="house">House</label>
+        <input type="radio" id="genre" name="answer" value="house">
+      </div>
+     </div>
+     <input type="submit" value="save"/>
+    </form>
+
+    <button id="delete-all">Delete All</button>
+
+    <h1>Music List</h1>  
+    <ul id="music-list"></ul>
+  </body>
+</html>
+
